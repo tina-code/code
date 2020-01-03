@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int Floor(float x){
+  return x/2;
+}
+
+int fx(float x){
+  if(x==0||x==1){
+    return x+1;
+  }
+  else {
+    int b;
+    b=Floor(x);10
+    return fx(x-1)+fx(b);
+  }
+}
+
+int main(){
+  int a,ans;
+  scanf("%d",&a);
+  ans=fx((float)a);
+  printf("%d\n",ans);
+  return 0;
+}
