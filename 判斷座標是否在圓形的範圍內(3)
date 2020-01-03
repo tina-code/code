@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+  int x,y,r;
+  scanf("%d%d",&x,&y);
+  r=100;
+  if(x*x+y*y>r*r){
+    printf("outside\n");
+  }
+  else {
+    printf("inside\n");
+  }
+}
