@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+void main(){
+  int prime,i;
+  scanf("%d",&prime);
+  for(i=2;i<prime;i++){
+    if(prime%i==0){
+      printf("NO\n");
+      break;
+    }
+    if(i==prime-1 && prime%i!=0){
+      printf("YES\n",i);
+      break;
+    }
+  }
+  if(prime==1 || prime==2){
+     printf("YES\n");
+  }
+}
