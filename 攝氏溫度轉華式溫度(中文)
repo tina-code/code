@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(){
+  float a;
+  while(scanf("%f",&a)!=EOF){
+    printf("%.1f\n",(1.8*a)+32);
+  }
+}
