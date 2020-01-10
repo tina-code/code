@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+float fx(int n){
+  if(n==1){
+    return 1;
+  }
+  else {
+    return (fx(n-1)/2)+1;
+  }
+}
+
+void main(){
+  long n;
+  while(scanf("%ld",&n)!=EOF){
+    printf("%.5f\n",fx(n));
+  }
+}
