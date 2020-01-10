@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int a[1000],i,sum=0;
+
+int main(){
+  for(i=0;i<6;i++){
+    scanf("%d",&a[i]);
+  }
+  for(i=0;i<6;i++){
+    sum+=(a[i]*a[i]*a[i]);
+  }
+  printf("%d\n",sum);
+  return 0;
+}
