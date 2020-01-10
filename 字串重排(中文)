@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int a[10000],i,j,n;
+char b[100000];
+
+void swap(char *x,char *y){
+  char tmp;
+  tmp=*x;
+  *x=*y;
+  *y=tmp;
+}
+
+int main(){
+  while(scanf("%s",b)!=EOF){
+    n=strlen(b);
+    for(i=0;i<n;i++){
+      for(j=0;j<n-1;j++){
+        if(b[j]<b[j+1]){
+          swap(&b[j],&b[j+1]);
+        }
+      }
+    }
+    printf("%s\n",b);
+  }
+  return 0;
+}
