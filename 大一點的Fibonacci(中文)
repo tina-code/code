@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+long F(long n){
+  long a1=0,a2=1,a3=1,i;
+  if(n<=1){
+    return 1;
+  }
+  for(i=2;i<=n;i++) {
+    a1=a2;
+    a2=a3;
+    a3=a1+a2;
+  }
+  return a3;
+}
+
+void main(){
+  long n;
+  while(scanf("%ld",&n)!=EOF){
+    printf("%ld\n",F(n));
+  }
+}
