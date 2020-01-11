@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int p(int m){
+  int i,value=1;
+  for(i=1;i<=m;i++){
+    value*=2;
+  }
+  return value;
+}
+
+int main(){
+  int i;
+  long long int ans;
+  scanf("%d",&i);
+  if(i<=31){
+    ans=p(i);
+    printf("%lld\n",ans);
+  }
+  else {
+    printf("Value of more than 31\n");
+  }
+  return 0;
+}
