@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+  int x,y,i,start,end,sum=0;
+  scanf("%d%d",&x,&y);
+  if(x>=y){
+    start=y;
+    end=x;
+  }
+  else {
+    start=x;
+    end=y;
+  }
+  while(start<=end){
+    sum+=start;
+    start++;
+  }
+  printf("%d\n",sum);
+  return 0;
+}
