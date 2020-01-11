@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+  int x,i=1,sum;
+  scanf("%d",&x);
+  while(i<=x){
+    if(i<x){
+      printf("%d + ",i);
+    }
+    if(i==x){
+      printf("%d = ",i);
+    }
+    i++;
+  }
+  sum=(1+x)*x/2;
+  printf("%d\n",sum);
+  return 0;
+}
