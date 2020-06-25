@@ -1,10 +1,11 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   float num[10];
   int i;
   for(i=0;i<10;i++){
-    scanf("%f",&num[i]);
+    cin >> num[i];
   }
   float max=-10000,min=10000;
   for(i=0;i<10;i++){
@@ -15,6 +16,6 @@ int main(){
       min=num[i];
     }
   }
-  printf("maximum:%.2f\n",max);
-  printf("minimum:%.2f\n",min);
+  cout << max;
+  cout << min;
 }
