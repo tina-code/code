@@ -1,14 +1,15 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int a[1000],i,n,b;
 
 int main(){
   for(i=0;i<6;i++){
-    scanf("%d",&a[i]);
+    cin >> a[i];
   }
   for(i=5;i>=1;i--){
-    printf("%d ",a[i]);
+    cout << a[i] << " ";
   }
-  printf("%d\n",a[0]);
+  cout << a[0] << endl;
   return 0;
 }
