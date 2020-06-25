@@ -3,7 +3,7 @@
 int main(){
   int a,b,h;
   float ans;
-  while(scanf("%d%d%d",&a,&b,&h)!=EOF){
-    printf("Trapezoid area:%.1f\n",(float)(a+b)*h/2);
+  while(cin >> a >> b >> h)){
+    cout << "Trapezoid area:" << (float)(a+b)*h/2 << endl;
   }
 }
