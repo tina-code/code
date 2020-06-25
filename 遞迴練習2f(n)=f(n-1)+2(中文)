@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 float fx(int n){
   if(n==1){
@@ -9,9 +10,9 @@ float fx(int n){
   }
 }
 
-void main(){
+int main(){
   long n;
-  while(scanf("%ld",&n)!=EOF){
-    printf("%.5f\n",fx(n));
+  while(cin >> n){
+    cout << fx(n) << endl;
   }
 }
