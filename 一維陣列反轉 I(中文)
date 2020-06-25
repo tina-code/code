@@ -1,15 +1,16 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int a[1000],i,n,b;
 
 int main(){
-  while(scanf("%d",&b)!=EOF){
+  while(cin >> b){
     a[n]=b;
     n++;
   }
   for(i=n-1;i>=1;i--){
-    printf("%d ",a[i]);
+    cout << a[i] << " ";
   }
-  printf("%d\n",a[0]);
+  cout << a[0] << endl;
   return 0;
 }
