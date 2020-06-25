@@ -1,10 +1,11 @@
-#include<stdio.h>
+#include<iostream>
 #include<string.h>
+using namespace std;
 
 int main(){
   int len,i,j,m,flag=0;
   char num[100000];
-  scanf("%s",num);
+  cin >> num;
   len=strlen(num);
   m=len/2;
   if(len%2==1){
@@ -30,10 +31,10 @@ int main(){
     }
   }
   if(flag==1){
-    printf("NO\n");
+    cout << "NO\n";
   }
   if(flag==0){
-    printf("YES\n");
+    cout << "YES\n";
   }
   return 0;
 }
