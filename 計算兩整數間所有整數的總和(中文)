@@ -1,8 +1,9 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int x,y,i,start,end,sum=0;
-  scanf("%d%d",&x,&y);
+  cin >> x >> y;
   if(x>=y){
     start=y;
     end=x;
@@ -15,6 +16,6 @@ int main(){
     sum+=start;
     start++;
   }
-  printf("%d\n",sum);
+  cout << sum << endl;
   return 0;
 }
