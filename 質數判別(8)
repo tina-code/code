@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void main(){
+int main(){
   int prime,i;
   cin >> prime;
   for(i=2;i<prime;i++){
@@ -17,4 +17,5 @@ void main(){
   if(prime==1 || prime==2){
      cout << "YES\n";
   }
+  return 0;
 }
