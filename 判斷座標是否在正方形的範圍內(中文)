@@ -1,13 +1,14 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int x,y;
-  scanf("%d%d",&x,&y);
+  cin >> x >> y;
   if(x<=100&&x>=0&&y<=100&&y>=0){
-    printf("inside\n");
+    cout << "inside\n";
   }
   else {
-    printf("outside\n");
+    cout << "outside\n";
   }
   return 0;
 }
