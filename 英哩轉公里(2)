@@ -1,4 +1,5 @@
 #include<iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -6,5 +7,5 @@ int main(){
   float ans;
   cin >> n;
   ans=(float)n*1.6;
-  cout << ans << endl;
+  cout << setiosflags(ios::fixed) << setprecision(1) << ans << endl;
 }
