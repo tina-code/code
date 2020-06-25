@@ -1,13 +1,14 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int x,y,r;
-  scanf("%d%d",&x,&y);
+  cin >> x >> y;
   r=100;
   if(x*x+y*y>r*r){
-    printf("outside\n");
+    cout << "outside\n";
   }
   else {
-    printf("inside\n");
+    cout << "inside\n";
   }
 }
