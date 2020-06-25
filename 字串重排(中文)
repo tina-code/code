@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include<iostream>
 #include<string.h>
 #include<stdlib.h>
+using namespace std;
 
 int a[10000],i,j,n;
 char b[100000];
@@ -13,7 +14,7 @@ void swap(char *x,char *y){
 }
 
 int main(){
-  while(scanf("%s",b)!=EOF){
+  while(cin >> b){
     n=strlen(b);
     for(i=0;i<n;i++){
       for(j=0;j<n-1;j++){
@@ -22,7 +23,7 @@ int main(){
         }
       }
     }
-    printf("%s\n",b);
+    cout << b << endl;
   }
   return 0;
 }
