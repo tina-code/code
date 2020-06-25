@@ -1,9 +1,10 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int a,b;
   float ans;
-  while(scanf("%d%d",&a,&b)!=EOF){
-    printf("%.1f\n",(float)(a*b)/2);
+  while(cin >> a >> b){
+    cout << (float)(a*b)/2) << endl;
   }
 }
