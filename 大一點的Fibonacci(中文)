@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 long F(long n){
   long a1=0,a2=1,a3=1,i;
@@ -13,9 +14,9 @@ long F(long n){
   return a3;
 }
 
-void main(){
+int main(){
   long n;
-  while(scanf("%ld",&n)!=EOF){
-    printf("%ld\n",F(n));
+  while(cin >> n){
+   cout << F(n) << endl;
   }
 }
