@@ -16,6 +16,6 @@ int main(){
       min=num[i];
     }
   }
-  cout << max;
-  cout << min;
+  cout << setiosflags(ios::fixed) << setprecision(2) << max;
+  cout << setiosflags(ios::fixed) << setprecision(2) << min;
 }
