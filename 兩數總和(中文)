@@ -2,7 +2,7 @@
 
 int main(){
   int a,b,ans;
-  while(scanf("%d%d",&a,&b)!=EOF){
-    printf("%d\n",a+b);
+  while(cin >> a >> b){
+    cout << a+b << endl;
   }
 }
