@@ -1,13 +1,14 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int a,b,ans;
-  while(scanf("%d%d",&a,&b)!=EOF){
-    printf("%d+%d=%d\n",a,b,a+b);
-    printf("%d*%d=%d\n",a,b,a*b);
-    printf("%d-%d=%d\n",a,b,a-b);
+  while(cin >> a >> b){
+    cout << a << "+" << b << "=" << a+b << endl;
+    cout << a << "*" << b << "=" << a*b << endl;
+    cout << a << "-" << b << "=" << a-b << endl;
     if(a>0){
-      printf("%d/%d=%d...%d\n",a,b,a/b,a%b);
+      cout << a << "/" << b << "=" << a/b << "..." << a%b << endl;
     }
     else {
       int q=a/b;
@@ -17,7 +18,7 @@ int main(){
       else {
         q+=1;
       }
-      printf("%d/%d=%d...%d\n",a,b,q,a-b*q);
+      cout << a << "/" << b << "=" << q << "..." << a-b*q << endl;
     }
   }
 }
