@@ -1,16 +1,17 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int time;
   int n_day,n_hr,n_min,n_sec;
-  scanf("%d",&time);
+  cin >> time;
   n_day=time/86400;
   n_hr=(time-(n_day*86400))/3600;
   n_min=(time-(n_day*86400+n_hr*3600))/60;
   n_sec=(time-(n_day*86400+n_hr*3600+n_min*60));
-  printf("%d days\n",n_day);
-  printf("%d hours\n",n_hr);
-  printf("%d minutes\n",n_min);
-  printf("%d seconds\n",n_sec);
+  cout << n_day << " " << days << endl;
+  cout << n_hr << " " << hours << endl;
+  cout << n_min << " " << minutes << endl;
+  cout << n_sec << " " << seconds << endl;
   return 0;
 }
