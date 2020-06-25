@@ -1,15 +1,16 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main(){
   int n,x,ans;
-  scanf("%d",&n);
+  cin >> n;
   if(n<3){
-    printf("0\n");
+    cout << "0\n";
   }
   else {
     x=n/3;
     ans=(3+3*x)*x/2;
-    printf("%d\n",ans);
+    cout << ans << endl;
   }
   return 0;
 }
