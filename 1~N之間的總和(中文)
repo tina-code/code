@@ -6,10 +6,10 @@ int main(){
   cin >> x;
   while(i<=x){
     if(i<x){
-      cout << i << " " << "+" << " " << endl;
+      cout << i << " " << "+" << " " ;
     }
     if(i==x){
-      cout << i << " " << "=" << " " << endl;
+      cout << i << " " << "=" << " " ;
     }
     i++;
   }
