@@ -5,6 +5,6 @@ using namespace std;
 int main(){
   float a;
   while(cin >> a){
-    cout << setiosflags(ios::fixed) << setprecision(1) << (1.8*a)+32) << endl;
+    cout << setiosflags(ios::fixed) << setprecision(1) << (1.8*a)+32 << endl;
   }
 }
